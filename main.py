@@ -40,7 +40,6 @@ class MainWindow(QMainWindow):
 
         self.color_dialog = QColorDialog(self)
         self.color_dialog.setOption(QColorDialog.ColorDialogOption.NoButtons)
-        self.color_dialog.setOptions(QColorDialog.ColorDialogOption.ShowAlphaChannel)
         self.color_dialog.currentColorChanged.connect(self.changeColor)
         mainLayout.addWidget(self.color_dialog)
 
